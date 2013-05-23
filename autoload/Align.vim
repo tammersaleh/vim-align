@@ -481,7 +481,6 @@ fun! Align#Align(hasctrl,...) range
    " retain first leading whitespace for all subsequent lines
    let bgntxt= substitute(getline(begline),'^\(\s*\).\{-}$','\1','')
 "   call Decho("retaining 1st leading whitespace: bgntxt<".bgntxt.">")
-   set noet
   endif
   exe begline.",".endline."ret"
 
